@@ -1,7 +1,9 @@
 # 🔒 Aplicação de Segurança com Spring Boot
 
-[![Java](https://img.shields.io/badge/Java-17-blue)]()
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-green)]()
+[![Java](https://img.shields.io/badge/Java-17-orange)]()
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-purple)]()
+[![React](https://img.shields.io/badge/React-3.x-blue)]()
+[![Vite](https://img.shields.io/badge/Vite-1.x-red)]()
 [![MongoDB](https://img.shields.io/badge/MongoDB-6.x-green)]()
 [![License](https://img.shields.io/badge/License-MIT-yellow)]()
 

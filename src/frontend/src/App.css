@@ -1,0 +1,309 @@
+/* Reset e estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121217;
+  color: #e0e0e0;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #1e1e2f;
+  border: 1px solid #33334d;
+  text-align: center;
+  box-shadow: none; /* removido para simplificar */
+}
+
+h1 {
+  color: #f5f5f7;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.03em;
+}
+
+/* Formulário de adição */
+.form-adicionar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.form-adicionar input {
+  flex: 1 1 200px;
+  max-width: 280px;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #444466;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #2a2a3d;
+  color: #e0e0e0;
+  transition: border-color 0.25s ease;
+}
+
+.form-adicionar input::placeholder {
+  color: #8888aa;
+}
+
+.form-adicionar input:focus {
+  outline: none;
+  border-color: #4aa3ff;
+  background-color: #383850;
+  color: #f0f0f0;
+  box-shadow: none; /* sombra removida para simplicidade */
+}
+
+.form-adicionar button {
+  flex: 1 1 150px;
+  max-width: 280px;
+  padding: 0.8rem 1.2rem;
+  background-color: #4aa3ff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: none; /* removido para simplicidade */
+}
+
+.form-adicionar button:hover {
+  background-color: #357acc;
+}
+
+/* Valor total exibido */
+.form-adicionar p,
+.form-edicao p {
+  flex-basis: 100%;
+  font-weight: 600;
+  color: #2ecc71;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Lista de produtos */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+li {
+  background-color: #2a2a3d;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  border: 1px solid #444466;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 600px;
+  width: 100%;
+  color: #ddd;
+  transition: none; /* remove animação para simplicidade */
+}
+
+li span.nome {
+  flex: 2 1 180px;
+  text-align: left;
+  color: #ccc;
+  font-weight: 600;
+}
+
+li span.desconto {
+  flex: 1 1 90px;
+  text-align: center;
+  color: #a0d468;
+}
+
+li span.estoque {
+  flex: 1 1 90px;
+  text-align: center;
+  color: #f39c12;
+}
+
+li span.preco {
+  flex: 1 1 110px;
+  font-weight: 700;
+  color: #2ecc71;
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+/* Formulário de edição */
+.form-edicao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-edicao input {
+  flex: 1 1 180px;
+  max-width: 260px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #444466;
+  background-color: #2a2a3d;
+  color: #ddd;
+  transition: border-color 0.25s ease;
+}
+
+.form-edicao input::placeholder {
+  color: #8888aa;
+}
+
+.form-edicao input:focus {
+  border-color: #4aa3ff;
+  background-color: #383850;
+  color: #f0f0f0;
+  box-shadow: none;
+}
+
+/* Botões */
+.botoes, .botoes-edicao {
+  display: flex;
+  gap: 0.8rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+button {
+  min-width: 100px;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  box-shadow: none;
+}
+
+.editar {
+  background-color: #f39c12;
+}
+
+.editar:hover {
+  background-color: #e67e22;
+}
+
+.deletar {
+  background-color: #e74c3c;
+}
+
+.deletar:hover {
+  background-color: #c0392b;
+}
+
+.botoes-edicao button:first-child {
+  background-color: #27ae60;
+}
+
+.botoes-edicao button:first-child:hover {
+  background-color: #219150;
+}
+
+.botoes-edicao button:last-child {
+  background-color: #7f8c8d;
+}
+
+.botoes-edicao button:last-child:hover {
+  background-color: #636e72;
+}
+
+/* Mensagens de erro */
+.erro {
+  color: #e74c3c;
+  background-color: #5e2a2a;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: none;
+}
+
+/* Mensagem de carregamento */
+.container > p {
+  text-align: center;
+  color: #95a5a6;
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 1rem;
+    width: 95%;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  li span {
+    flex-basis: 100%;
+    text-align: left !important;
+    margin-bottom: 0.3rem;
+  }
+
+  li span.preco {
+    text-align: left !important;
+  }
+
+  .botoes, .botoes-edicao {
+    justify-content: center;
+  }
+
+  .form-adicionar, .form-edicao {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-adicionar input, .form-edicao input, .form-adicionar button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-adicionar p,
+  .form-edicao p {
+    text-align: center;
+  }
+}

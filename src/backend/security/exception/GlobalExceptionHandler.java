@@ -1,4 +1,4 @@
-package backend.java.com.testedev.security.exception;
+package backend.security.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

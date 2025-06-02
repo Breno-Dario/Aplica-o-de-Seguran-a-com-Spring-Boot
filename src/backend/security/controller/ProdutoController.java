@@ -1,7 +1,7 @@
-package backend.java.com.testedev.security.controller;
+package backend.security.controller;
 
-import backend.java.com.testedev.security.repository.ProdutoRepository;
-import backend.java.com.testedev.security.model.Produtos;
+import backend.security.repository.ProdutoRepository;
+import backend.security.model.Produtos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

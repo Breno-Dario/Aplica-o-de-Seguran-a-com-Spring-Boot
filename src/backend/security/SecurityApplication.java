@@ -1,4 +1,4 @@
-package backend.java.com.testedev.security;
+package backend.security;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package backend.java.com.testedev.security.model;
+package backend.security.model;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;

@@ -49,7 +49,6 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- Dependências de teste -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
